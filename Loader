@@ -1,1 +1,2 @@
-
+scriptkey = "Stereo | Keyless"
+loadstring(game:HttpGet("https://api.redstoneguard.xyz/api/loader/b2ef620a-cb48-45a4-acd6-6ce70b629477/init"))()

@@ -1,14 +1,1 @@
-local games = {
-    [124216119978534] = "https://raw.githubusercontent.com/Ateue/Stereo/refs/heads/main/Ride%20A%20Pet"
-}
 
-local url = games[game.GameId] or games[game.PlaceId]
-if not url then return end
-
-local ok, code = pcall(game.HttpGet, game, url)
-if not ok or type(code) ~= "string" or #code == 0 then return end
-
-local fn = loadstring(code)
-if fn then
-    task.spawn(fn)
-end
